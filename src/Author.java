@@ -4,12 +4,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("all")
 public class Author extends Person {
-    private List books;
+
+    private  List<String> books;
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
-        books = new ArrayList();
+        books = new ArrayList<>();
     }
 
     /**
@@ -29,7 +31,7 @@ public class Author extends Person {
     }
 
     @Override
-    public String sortName() {
-        return String.format("%s, %s", lastName, firstName);
+    public String fullName() {
+        return String.format("%s, %s", firstName, lastName);
     }
 }
