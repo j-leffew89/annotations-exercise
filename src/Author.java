@@ -4,10 +4,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
-@SuppressWarnings("all")
+//@SuppressWarnings("all")
 public class Author extends Person {
 
-    private  List<String> books;
+    private final List<String> books;
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
